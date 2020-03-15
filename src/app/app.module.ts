@@ -1,28 +1,26 @@
-import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from "./app-routing.module";
-import { AppComponent } from "./app.component";
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { NavComponent } from "./nav/nav.component";
-import { ProfileComponent } from "./profile/profile.component";
+import { NavComponent } from './nav/nav.component';
+import { ProfileComponent } from './profile/profile.component';
 
+import { RequestRecommnedationComponent } from './dialoges/request-recommnedation/request-recommnedation.component';
+import { SkillsComponent } from './dialoges/skills/skills.component';
+import { SummaryComponent } from './dialoges/summary/summary.component';
+import { EducationComponent } from './dialoges/education/education.component';
+import { WorkExperienceComponent } from './dialoges/work-experience/work-experience.component';
+import { LanguageComponent } from './dialoges/language/language.component';
 
-import { RequestRecommnedationComponent } from "./dialoges/request-recommnedation/request-recommnedation.component";
-import { SkillsComponent } from "./dialoges/skills/skills.component";
-import { SummaryComponent } from "./dialoges/summary/summary.component";
-import { EducationComponent } from "./dialoges/education/education.component";
-import { WorkExperienceComponent } from "./dialoges/work-experience/work-experience.component";
-import { LanguageComponent } from "./dialoges/language/language.component";
-
-
-import {MaterialModule} from '../app/material/material.module';
-
+import { MaterialModule } from '../app/material/material.module';
 
 import { SignupComponent } from './registeration/signup/signup.component';
 import { SigninComponent } from './registeration/signin/signin.component';
 import { LinksComponent } from './dialoges/links/links.component';
+import { PostActionsComponent } from './post/post-actions/post-actions.component';
 
 @NgModule({
   declarations: [
@@ -38,15 +36,15 @@ import { LinksComponent } from './dialoges/links/links.component';
     SignupComponent,
     SigninComponent,
     LinksComponent,
-
+    PostActionsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-   MaterialModule
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
